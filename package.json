@@ -1,5 +1,5 @@
 {
-  "name": "FriendFinder",
+  "name": "friendfinder",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -17,8 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/dln5057/FriendFinder.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Donald Nowels",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dln5057/FriendFinder/issues"

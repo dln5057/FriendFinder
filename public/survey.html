@@ -4,7 +4,6 @@
   <title>Survey</title>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="http://bootswatch.com/lumen/bootstrap.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="app/public/styles.css"> -->
   
 </head>
 
@@ -26,13 +25,13 @@
         <div class="panel-body">
           <h4>Your Full Name</h4>
           <div class="input-group">
-            <input id = "formName" class="form-control" type="text" name="name" placeholder="John Smith">
+            <input id = "formName" class="form-control" type="text" name="name" placeholder=" ">
             <span class="input-group-addon">(Required)</span>
           </div>  
           <br>
           <h4>Link to a Photo Image</h4>
           <div class="input-group">
-            <input id = "formImage" class="form-control" type="text" name="name" placeholder="http://yourphotolink.com.jpg/">
+            <input id = "formImage" class="form-control" type="text" name="name" placeholder="Picture url here!">
             <span class="input-group-addon">(Required)</span>
           </div>
         </div>
@@ -41,7 +40,7 @@
     <h3 class="questionLabels">Question 1:</h3>
     <p class='question'>Pizza is my favorite food.</p>
 
-      <select data-placeholder="" class="chosen-select" id="food">
+      <select data-placeholder="" class="selected" id="food">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -53,7 +52,7 @@
       <h3 class="questionLabels">Question 2</h3>
       <p class='question'>Javascript is my favorite coding language.</p>
 
-      <select data-placeholder="" class="chosen-select" id="language">
+      <select data-placeholder="" class="selected" id="language">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -65,7 +64,7 @@
     <h3 class="questionLabels">Question 3</h3>
     <p class='question'>Music is a big part of my life.</p>
 
-      <select data-placeholder="" class="chosen-select" id="music">
+      <select data-placeholder="" class="selected" id="music">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -77,7 +76,7 @@
     <h3 class="questionLabels">Question 4</h3>
     <p class='question'>Maintaining a well balanced diet and exercise is the key to success.</p>
 
-      <select data-placeholder="" class="chosen-select" id="fitness">
+      <select data-placeholder="" class="selected" id="fitness">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -89,7 +88,7 @@
     <h3 class="questionLabels">Question 5</h3>
     <p class='question'>Mothers know all, so you should listen to them.</p>
 
-      <select data-placeholder="" class="chosen-select" id="mother">
+      <select data-placeholder="" class="selected" id="mother">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -101,7 +100,7 @@
     <h3 class="questionLabels">Question 6</h3>
     <p class='question'>It should be illegal to have conversations before having your coffee.</p>
 
-      <select data-placeholder="" class="chosen-select" id="coffee">
+      <select data-placeholder="" class="selected" id="coffee">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -113,7 +112,7 @@
     <h3 class="questionLabels">Question 7</h3>
     <p class='question'>Winter is better than Summer.</p>
 
-      <select data-placeholder="" class="chosen-select" id="seasons">
+      <select data-placeholder="" class="selected" id="seasons">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -125,7 +124,7 @@
     <h3 class="questionLabels">Question 8</h3>
     <p class='question'>Monday needs more lovin.</p>
 
-      <select data-placeholder="" class="chosen-select" id="monday">
+      <select data-placeholder="" class="selected" id="monday">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -137,7 +136,7 @@
     <h3 class="questionLabels">Question 9</h3>
     <p class='question'>All dogs go to heaven.</p>
 
-      <select data-placeholder="" class="chosen-select" id="dogs">
+      <select data-placeholder="" class="selected" id="dogs">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -149,7 +148,7 @@
     <h3 class="questionLabels">Question 10</h3>
     <p class='question'>Donald Trump is a dummy.</p>
 
-      <select data-placeholder="" class="chosen-select" id="politics">
+      <select data-placeholder="" class="selected" id="politics">
       <option value="0">Select</option>
       <option value="1">1 - Disagree Completely</option>
       <option value="2">2</option>
@@ -159,8 +158,8 @@
     </select>
   </div>
     
-      <!-- Quiz Submit Button -->
-      <button id="submitButton" type="submit" class="btn btn-md btn-primary btn-block"><h4><span class="glyphicon glyphicon-send"></span> Submit</h4></button> 
+       <!-- Quiz Submit Button -->
+      <button id="submitButton" type="submit" class="btn btn-md btn-primary btn-block"><h4><span class="glyphicon glyphicon-upload"></span> Submit</h4></button> 
   
       <br>
 
@@ -169,27 +168,21 @@
         <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/dln5057/FriendFinder" target="_blank">GitHub Repo</a> | <a href="/">Home</a></p>
       </footer> 
 
-
-      <!-- Match Modal -->
       <div id="resultsModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
-          <!-- Modal Content-->
           <div class="modal-content">
 
-            <!-- "X" Button to close the modal -->
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h2 class="modal-title"><strong>Meet Your New Friend!</strong></h2>
             </div>
 
-            <!-- Modal Body (For Match Info) -->
             <div class="modal-body">
               <h2 id="matchName"></h2>
               <img id="matchImg" src="" alt="Image Not Found" style="max-width: 350px;">
             </div>
 
-            <!-- Modal Footer (Close Button) -->
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
@@ -202,92 +195,83 @@
 
     </div>
 
-
-    <!-- Link in jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
 
-
-    <!-- Latest compiled and minified JavaScript (USED FOR THE MODAL) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-    <!-- JavaScript for Submission Logic -->
     <script>
-      // Global Variable Declaration (scoping fix)
-      var allFieldsCompleted;
+
+      var fieldsCompleted;
       $(document).ready(function() {
-        // Event Listener for Submission
+  
         $('#submitButton').on('click', function() {
           
-          // Check if all the user fields are completed
+
           checkIfComplete(function(){
-            // Proceed with AJAX call if all questions are answered
-            if(allFieldsCompleted){
-              collectInputs();
+            //  AJAX call
+            if(fieldsCompleted){
+              friendInputs();
             }
             else{
-              alert('Please complete all fields before submitting!');
+              alert('Complete the Survey first before finding your friend!');
             }
-          }); // end checkIfComplete() callback
-        }); // end submit listener
-      }); // document ready
-      // Function to valid user input
+          }); 
+        }); 
+      }); 
+      
       function checkIfComplete(callback){
-        // Check through all the questions (i.e. iterate through all of class "chosen-select")
-        var questionsCompleted;
-        $('.chosen-select').each(function(){
-          if ( $(this).val() == "" ){
-            questionsCompleted = false;
+    
+        var completedQuestions;
+        $('.selected').each(function(){
+          if ( $(this).val() == "0" ){
+            completedQuestions = false;
           }
         })
-        // This counters the async behavior of $.each()
+            
         .promise().done(function(){
-          // Check if any questions are incomplete
-          if(questionsCompleted == false){
-            allFieldsCompleted = false;
+      
+          if(completedQuestions == false){
+            fieldsCompleted = false;
           }
-          // Determine if Name is entered
-          else if( $('#formName').val().trim() == "" ){
-            allFieldsCompleted = false;
+
+          else if( $('#formName').val().trim() == "0" ){
+            fieldsCompleted = false;
           }
-          // Determine if Link is entered
-          else if( $('#formImage').val().trim() == "" ){
-            allFieldsCompleted = false;
+
+          else if( $('#formImage').val().trim() == "0" ){
+            fieldsCompleted = false;
           }
-          // Otherwise, the all fields are completed
+     
           else{
-            allFieldsCompleted = true;
+            fieldsCompleted = true;
           }
-          // Fire Off Callback (to counter async behavior of $.each)
+         
           callback();       
         });
       }
-      function collectInputs(){
+      function freindInputs(){
         // Make new friend object
         var newFriend = {
           name: $('#formName').val().trim(),
           photo: $('#formImage').val().trim(),
           scores: []
         };
-        // Loop through Questions to get scores
+        // gets score of user
         var scoresArray = [];
-        $('.chosen-select').each(function(){
-          scoresArray.push( parseInt( $(this).val() ) ); // Parse Input Value as integer
+        $('.selected').each(function(){
+          scoresArray.push( parseInt( $(this).val() ) ); 
         })
-         // This counters the async behavior of $.each()
         .promise().done(function(){
           
-          // Push the array of scores to the new friend object
           newFriend.scores = scoresArray;
-          // POST the newFriend to the friends.js file and get back the best match
           var currentURL = window.location.origin;
           $.post(currentURL + "/api/friends", newFriend, function(data){
-            // Add Best Match attributes to Modal
+           
             $('#matchName').text(data.name);
             $('#matchImg').attr('src', data.photo);
             // Show the modal with the best match 
             $("#resultsModal").modal('toggle');
-          }); // end AJAX POST
+          }); 
         });
       }
     </script>

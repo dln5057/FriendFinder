@@ -1,4 +1,4 @@
-var friendsList = [{
+var friendsData = [{
   name: 'Dwanyne "The Rock" Johnson',
   photo: 'https://s-media-cache-ak0.pinimg.com/736x/d9/90/90/d99090062d42bd90a9a5660cebfa4262.jpg',
   scores: [5,1,2,2,2,1,3,4,1,3],
@@ -12,4 +12,4 @@ var friendsList = [{
   scores: [5,5,1,3,4,3,2,3,1,5],
 }];
 
-module.exports = friendsList;
+module.exports = friendsData;

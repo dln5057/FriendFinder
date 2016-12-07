@@ -1,4 +1,4 @@
-console.log('HTML Route Connected Successfully');
+console.log('HTML Route Connected ');
 
 
 // Node Dependencies
